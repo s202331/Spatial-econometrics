@@ -46,7 +46,7 @@ library(lmtest)
 ```
 # Import Dataset
 
-```{r}
+```{r setup, include=FALSE}
 df <- readxl::read_excel("C:/Users/gozia/Desktop/Piotrek/Prognozowanie i Symulacja/PIS.xlsx") %>% 
   mutate(Data = as.Date(Data))
 ```
